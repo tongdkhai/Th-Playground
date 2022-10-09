@@ -1,0 +1,99 @@
+$primary-color: #FFC87A;
+$text-color: #1A2B5F;
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@mixin flex ($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+//max-width:1440px, width: 1170px
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+// Logo
+.logo {
+    color: $text-color;
+    font-size: 2.5rem;
+    font-weight: 600;
+    &__text {
+        color: $primary-color
+    }
+}
+
+
+// Header
+.header {
+    padding-top: 4rem;
+    &__inner {
+        @include flex(center, space-between);
+    }
+    &__menu {
+        &-list {
+            @include flex(center);
+            list-style: none;
+        }
+        &-item {
+            margin-left: 5rem;
+            &:last-child {
+                margin-left: 7rem;
+            }
+        }
+
+        &-link {
+            font-size: 1.6rem;
+            color: $text-color;
+            transition: color 0.25s linear, border 0.25s linear;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        &--login {
+            padding: 1.5rem 2.5rem;
+            display: inline-block;
+            border: 1px solid currentColor;
+            border-radius: 3rem;
+        }
+    }
+}
+
+
+// Banner
+.banner {
+    margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%;
+}
+
+
+$primary-color: #FFC87A;
+
+
+.header {
+    height: 200px;
+    background-color: $primary-color;
+    &__logo {
+        height:100px;
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,47 @@
+$primary-color: #FFC87A;
+$text-color: #1A2B5F;
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+//max-width:1440px, width: 1170px
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+
+
+.header {
+    height: 200px;
+    background-color: $primary-color;
+    &__logo {
+        height:100px;
+        background-color: #fff;
+    }
+}

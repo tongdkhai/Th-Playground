@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+$primary-color: #FFC87A;
+
+
+.header {
+    height: 200px;
+    background-color: $primary-color;
+    &__logo {
+        height:100px;
+        background-color: #fff;
+    }
+}

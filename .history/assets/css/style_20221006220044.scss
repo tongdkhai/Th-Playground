@@ -1,0 +1,68 @@
+$primary-color: #FFC87A;
+$text-color: #1A2B5F;
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+@mixin flex ($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+//max-width:1440px, width: 1170px
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+// Logo
+.logo {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2.5rem;
+    font-weight: 600;
+    &__text {
+        color: $primary-color
+    }
+}
+
+
+// Header
+.header {
+    padding-top: 4rem;
+    &__inner {
+        @include flex(center, space-between, );
+    }
+    &__menu {
+        &-list {
+            @include flex(center);
+        }
+    }
+}
